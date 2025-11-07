@@ -1,0 +1,17 @@
+resources:
+  pipelines:
+    pipeline_new_pipeline_2025_11_07_01_41:
+      name: New Pipeline 2025-11-07 01:41
+      libraries:
+        - glob:
+            include: ../../src/pipelines/New
+              Pipeline 2025-11-07 01:41/transformations/**
+      schema: bronze
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: ${var.catalog_name}
+      serverless: true
+      root_path: ../../src/pipelines/New
+        Pipeline 2025-11-07 01:41
